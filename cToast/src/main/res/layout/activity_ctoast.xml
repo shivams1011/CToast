@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/toastRelativeLayout"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/toast_bg_corner"
+	android:fitsSystemWindows="false"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="12dp">
+
+	<ImageView
+		android:id="@+id/imgToastTop"
+		android:layout_width="@dimen/imageSize24dp"
+		android:layout_height="@dimen/imageSize24dp"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:layout_toLeftOf="@id/toastMsgText"
+		android:src="@drawable/ic_error_red_24dp" />
+
+
+	<LinearLayout
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+
+		<ImageView
+			android:id="@+id/imgToastLeft"
+			android:layout_width="@dimen/imageSize24dp"
+			android:layout_height="@dimen/imageSize24dp"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:layout_toLeftOf="@id/toastMsgText"
+			android:src="@drawable/ic_error_red_24dp" />
+
+
+		<TextView
+			android:id="@+id/toastMsgText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="Hello World" />
+
+
+		<ImageView
+			android:id="@+id/imgToastRight"
+			android:layout_width="@dimen/imageSize24dp"
+			android:layout_height="@dimen/imageSize24dp"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:layout_toLeftOf="@id/toastMsgText"
+			android:src="@drawable/ic_error_red_24dp" />
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/imgToastBottom"
+		android:layout_width="@dimen/imageSize24dp"
+		android:layout_height="@dimen/imageSize24dp"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:layout_toLeftOf="@id/toastMsgText"
+		android:src="@drawable/ic_error_red_24dp" />
+
+
+</LinearLayout>
