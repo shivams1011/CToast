@@ -10,9 +10,16 @@
 	tools:showIn="@layout/activity_main">
 
 	<Button
-		android:text="Show Toast"
-		android:id="@+id/btnShowText"
+		android:text="Show Success Toast"
+		android:id="@+id/btnShowSuccess"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content" />
+	<Button
+		android:text="Show Error Toast"
+		android:id="@+id/btnShowError"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+
 
 </LinearLayout>

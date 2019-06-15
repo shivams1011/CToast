@@ -14,6 +14,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,16 +34,32 @@ public class MainActivity extends AppCompatActivity {
 			}
 		});
 
-		findViewById(R.id.btnShowText).setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.btnShowError).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 
 				CToast cToast = new CToast.Builder(getApplicationContext())
-						.setToastBgColor(R.color.colorPrimary)
-						.setMsg(R.string.test_msg)
-						.setBottomDrawable(R.drawable.ic_error_red_24dp)
-						.setGravity(Gravity.CENTER)
-						.setXYoffSet(-80,50)
+						.setToastBgColor(R.color.ct_error)
+						.setMsg(R.string.error)
+						.setLeftDrawable(R.drawable.ic_error_red_24dp)
+						.setDuration(Toast.LENGTH_SHORT)
+						.setTextColor(R.color.white)
+						.build();
+				cToast.show();
+
+			}
+		});
+
+
+		findViewById(R.id.btnShowSuccess).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+				CToast cToast = new CToast.Builder(getApplicationContext())
+						.setToastBgColor(R.color.ct_success)
+						.setMsg(R.string.success)
+						.setLeftDrawable(R.drawable.ic_done_green_24dp)
+						.setDuration(Toast.LENGTH_SHORT)
 						.setTextColor(R.color.white)
 						.build();
 				cToast.show();
