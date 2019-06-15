@@ -2,7 +2,7 @@
 Custom Toast for Android
 
 ## Implmentation:-
-Add following code in App Gradle file
+Add following code in Project Gradle file
 ```bash
 allprojects {
 	repositories {
@@ -11,7 +11,7 @@ allprojects {
 		}
 	}
   ```
-Add following dependency in Project Gradle file.
+Add following dependency in App Gradle file.
   ```bash
   dependencies {
 	        implementation 'com.github.shivams1011:CToast:v1.1'
